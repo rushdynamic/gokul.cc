@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import { PostHogProvider } from './providers';
 
 const inter = localFont({
 	src: [
@@ -107,14 +108,16 @@ export default function RootLayout({
 			<body
 				className={`${inter.variable} ${neueMetana.variable} ${montreal.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
 			>
-				<div className="h-full custom-bg flex flex-col items-center">
-					<main className="min-h-screen md:w-[60%] flex flex-col justify-start">
-						<NavBar />
-						{children}
-						<div className="grow" />
-						<Footer />
-					</main>
-				</div>
+				<PostHogProvider>
+					<div className="h-full custom-bg flex flex-col items-center">
+						<main className="min-h-screen md:w-[60%] flex flex-col justify-start">
+							<NavBar />
+							{children}
+							<div className="grow" />
+							<Footer />
+						</main>
+					</div>
+				</PostHogProvider>
 			</body>
 		</html>
 	);
