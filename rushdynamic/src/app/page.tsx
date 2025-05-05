@@ -48,7 +48,7 @@ export default function Home() {
 						</p>
 						<p className="pb-3">
 							{
-								"I'm a full-stack engineer with over 5 years of professional experience in the industry, currently working out of "
+								"I'm a full-stack engineer with over 7 years of professional experience in the industry, currently working out of "
 							}
 							<span className="font-fraunces italic">Bangalore, India</span>.
 						</p>

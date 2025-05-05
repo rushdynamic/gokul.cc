@@ -1,11 +1,11 @@
 [
 	{
-		"title": "sqrrl",
-		"year": 2024,
-		"image": "/images/projects/sqrrl2.svg",
-		"description": "sqrrl is a minimal state management library for React",
+		"title": "avastha",
+		"year": 2025,
+		"image": "/images/projects/avastha_logo.png",
+		"description": "A minimal and flexible state management library for React 🐿️",
 		"tags": ["TypeScript", "React"],
-		"git": "https://github.com/rushdynamic/sqrrl"
+		"git": "https://github.com/rushdynamic/avastha"
 	},
 	{
 		"title": "crypto-ticker-cli",
