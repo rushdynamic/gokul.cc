@@ -111,7 +111,7 @@ export default function RootLayout({
 			>
 				<PostHogProvider>
 					<div className="h-full custom-bg flex flex-col items-center">
-						<main className="min-h-screen md:w-[60%] flex flex-col justify-start">
+						<main className="min-h-screen md:w-[60%] md:max-w-[60%] flex flex-col justify-start max-w-full">
 							<NavBar />
 							{children}
 							<div className="grow" />
