@@ -62,7 +62,9 @@ function Contact() {
 		<div className="p-8 font-montreal text-dark-grey flex flex-col gap-4">
 			<div className="text-7xl font-semibold">Contact</div>
 			<div className="text-xl md:text-2xl lg:text-3xl">
-				Let's connect, feel free to reach out to me on any of these platforms
+				{
+					"Let's connect, feel free to reach out to me on any of these platforms"
+				}
 			</div>
 			<div className="mx-auto w-3/4">
 				<div className="grid md:grid-cols-2 gap-4 sm:grid-cols-1 py-4 md:py-12">
