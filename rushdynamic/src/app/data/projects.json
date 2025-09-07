@@ -3,12 +3,12 @@
 		"title": "avastha",
 		"year": 2025,
 		"image": "/images/projects/avastha_logo.png",
-		"description": "A minimal and flexible state management library for React 🐿️",
+		"description": "A minimal and flexible state management library for React, with support for both immutable and mutable state updates 🐿️",
 		"tags": ["TypeScript", "React"],
 		"git": "https://github.com/rushdynamic/avastha"
 	},
 		{
-		"title": "Declair",
+		"title": "declair",
 		"year": 2025,
 		"image": "/images/projects/declair.png",
 		"description": "A TUI app to find and add packages to your NixOS config",
