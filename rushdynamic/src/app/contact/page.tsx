@@ -8,20 +8,13 @@ function CopyId({ id }: { id: string }) {
 	const [copied, setCopied] = useState(false);
 	return (
 		<div
-			className="flex flex-col items-center"
+			className="flex flex-col items-center gap-1"
 			onClick={() => {
 				setCopied(true);
 				navigator.clipboard.writeText(id);
 				setTimeout(() => setCopied(false), 1500);
 			}}
 		>
-			<motion.div
-				className="text-xs font-jetbrains-mono bg-black text-white z-30 px-2 py-0.5"
-				initial={{ opacity: 0 }}
-				animate={{ opacity: copied ? 50 : 0 }}
-			>
-				Copied
-			</motion.div>
 			<Image
 				src="/images/icons/copy.svg"
 				alt="Copy to clipboard"
@@ -29,6 +22,13 @@ function CopyId({ id }: { id: string }) {
 				height={20}
 				width={20}
 			/>
+			<motion.div
+				className="text-xs font-jetbrains-mono bg-black text-white z-30 px-2 py-0.5 "
+				initial={{ opacity: 0 }}
+				animate={{ opacity: copied ? 50 : 0 }}
+			>
+				Copied
+			</motion.div>
 		</div>
 	);
 }
