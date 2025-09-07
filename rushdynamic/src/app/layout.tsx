@@ -110,7 +110,7 @@ export default function RootLayout({
 				className={`${inter.variable} ${neueMetana.variable} ${montreal.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
 			>
 				<PostHogProvider>
-					<div className="h-full custom-bg flex flex-col items-center">
+					<div className="h-full w-screen custom-bg flex flex-col items-center">
 						<main className="min-h-screen md:w-[60%] md:max-w-[60%] flex flex-col justify-start max-w-full">
 							<NavBar />
 							{children}
