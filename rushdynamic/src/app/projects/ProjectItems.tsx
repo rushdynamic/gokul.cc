@@ -41,7 +41,7 @@ const ProjectItem = ({
 						className="group h-full w-full min-w-50 lg:min-w-80 bg-gradient-to-r from-[#d2c9a0] to-[#d2c9a0] flex flex-col lg:flex-row lg:gap-8  hover:cursor-pointer items-stretch border border-solid border-dark-grey"
 					>
 						<div className="flex items-center justify-center p-6 bg-dark-grey min-w-fit">
-							<Image src={image} alt={title} height={280} width={280} />
+							<Image src={image} alt={title} height={200} width={200} />
 						</div>
 						<div className="flex flex-col p-6 w-full gap-3">
 							<div className="flex items-start justify-between gap-2 flex-col lg:flex-row lg:items-center">
