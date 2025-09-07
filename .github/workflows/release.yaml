@@ -5,7 +5,7 @@ on:
     branches:
       - release
     paths:
-      - 'package.json' # only run when this file changes
+      - 'rushdynamic/package.json' # only run when this file changes
 
 jobs:
   release:
