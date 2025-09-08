@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import packageJson from '../../package.json';
 
 interface ContactIconProps {
 	img: string;
@@ -24,8 +25,9 @@ const ContactIcon = ({ img, alt, url }: ContactIconProps) => {
 };
 
 export default function Footer() {
+	const ver = `v${packageJson.version}`;
 	return (
-		<div className="flex w-full justify-center gap-8 pb-4">
+		<div className="flex w-full justify-center items-center gap-8 pb-4 px-4 relative left-1/2 -translate-x-1/2 bottom-0">
 			<ContactIcon
 				img="/images/icons/github.svg"
 				alt="GitHub"
@@ -36,6 +38,15 @@ export default function Footer() {
 				alt="LinkedIn"
 				url="https://www.linkedin.com/in/gokulsyam/"
 			/>
+			<Link
+				href={`https://github.com/rushdynamic/gokul.cc/releases/tag/${ver}`}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<span className="absolute right-8 text-xs text-dark-grey font-jetbrains-mono opacity-30 hover:opacity-100 transition-opacity">
+					{ver}
+				</span>
+			</Link>
 		</div>
 	);
 }
