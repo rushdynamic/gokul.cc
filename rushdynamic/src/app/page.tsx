@@ -10,7 +10,7 @@ export default function Home() {
 			</div>
 			<div className="flex-grow"></div>
 			<div className="h-full flex flex-col items-center justify-center">
-				<div className="flex flex-col xl:flex-row gap-8 md:gap-14 items-center px-4 pb-10 md:pt-4 md:px-10 rounded-3xl">
+				<div className="flex flex-col xl:flex-row gap-8 md:gap-14 items-center px-4 pb-4 md:pt-4 md:px-10 rounded-3xl">
 					<motion.div
 						initial={{ y: 20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
