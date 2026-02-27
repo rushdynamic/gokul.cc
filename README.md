@@ -1,5 +1,7 @@
-# rushdynamic.com
+# gokul.cc
 
-Personal homepage powered by Next.js and Framer Motion.
+Personal homepage powered by Next.js and Motion.
 
-Hosted on Vercel.
+## CICD
+
+Deployments happen automatically on updating the version in `package.json` and merging the changes to `release`.
